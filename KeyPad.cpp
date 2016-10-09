@@ -19,6 +19,7 @@ KeyPad::KeyPad(uint8_t x1, uint8_t x2, uint8_t x3, uint8_t x4,
 	y2_ = y2;
 	y3_ = y3;
 	y4_ = y4;
+	y4_ = y4;
 }
 
 KeyPad::~KeyPad() {
