@@ -9,16 +9,24 @@
 #define BEEPER_H_
 #include "Arduino.h"
 #include "inttypes.h"
+#include "MsTimer2.h"
 
 class Beeper {
 private:
-	uint8_t _pinOne,_pinThree;
+
 
 public:
+	uint8_t _pinOne, _pinThree;
+	volatile bool isBeep = false;
+	volatile uint32_t beepRemainder = 0;
+	uint8_t speakerState = 0;
+	volatile bool silent_ = false;
 
-	Beeper(uint8_t pinOne,/* uint8_t pinTwo, */uint8_t pinThree);
+	Beeper(uint8_t pinOne, uint8_t pinThree);
 	~Beeper();
-	void beep(uint32_t length);
+	void beep(uint32_t length, bool silent);
+	void beepAsync(uint32_t length, bool silent);
+
 };
 
 
