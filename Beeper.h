@@ -12,11 +12,11 @@
 
 class Beeper {
 private:
-	uint8_t _pinOne, _pinTwo;
+	uint8_t _pinOne,_pinThree;
 
 public:
 
-	Beeper(uint8_t pinOne, uint8_t pinTwo);
+	Beeper(uint8_t pinOne,/* uint8_t pinTwo, */uint8_t pinThree);
 	~Beeper();
 	void beep(uint32_t length);
 };

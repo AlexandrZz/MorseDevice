@@ -1,0 +1,1110 @@
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya
+$ touch .gitignore
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya
+$ git init
+Initialized empty Git repository in C:/Users/алекс/Desktop/sloeber/workspace/Hel                                                      lo_Kursovaya/.git/
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .cproject
+        .gitignore
+        .project
+        .settings/
+        Beeper.cpp
+        Beeper.h
+        Hello_Kursovaya.cpp
+        Hello_Kursovaya.h
+        KeyPad.cpp
+        KeyPad.h
+        LiquidCrystal_I2C.cpp
+        LiquidCrystal_I2C.h
+        MorseCoder.cpp
+        MorseCoder.h
+        Release/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .cproject
+        .gitignore
+        .project
+        .settings/
+        Beeper.cpp
+        Beeper.h
+        Hello_Kursovaya.cpp
+        Hello_Kursovaya.h
+        KeyPad.cpp
+        KeyPad.h
+        LiquidCrystal_I2C.cpp
+        LiquidCrystal_I2C.h
+        MorseCoder.cpp
+        MorseCoder.h
+        Release/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .cproject
+        .gitignore
+        .project
+        .settings/
+        Beeper.cpp
+        Beeper.h
+        Hello_Kursovaya.cpp
+        Hello_Kursovaya.h
+        KeyPad.cpp
+        KeyPad.h
+        LiquidCrystal_I2C.cpp
+        LiquidCrystal_I2C.h
+        MorseCoder.cpp
+        MorseCoder.h
+        Release/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .cproject
+        .gitignore
+        .project
+        .settings/
+        Beeper.cpp
+        Beeper.h
+        Hello_Kursovaya.cpp
+        Hello_Kursovaya.h
+        KeyPad.cpp
+        KeyPad.h
+        LiquidCrystal_I2C.cpp
+        LiquidCrystal_I2C.h
+        MorseCoder.cpp
+        MorseCoder.h
+        Release/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git add KeyPad.
+KeyPad.cpp  KeyPad.h
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git add KeyPad.h
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   KeyPad.h
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .cproject
+        .gitignore
+        .project
+        .settings/
+        Beeper.cpp
+        Beeper.h
+        Hello_Kursovaya.cpp
+        Hello_Kursovaya.h
+        KeyPad.cpp
+        LiquidCrystal_I2C.cpp
+        LiquidCrystal_I2C.h
+        MorseCoder.cpp
+        MorseCoder.h
+        Release/
+
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git add .
+warning: LF will be replaced by CRLF in LiquidCrystal_I2C.cpp.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in LiquidCrystal_I2C.h.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/core/core/subdir.mk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/libraries/HID/src/subdir.mk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/libraries/Keyboard/src/subdir.mk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/libraries/SoftwareSerial/src/subdir.mk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/libraries/Wire/src/subdir.mk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/libraries/Wire/src/utility/subdir.mk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/makefile.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/sources.mk.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in Release/subdir.mk.
+The file will have its original line endings in your working directory.
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .cproject
+        new file:   .gitignore
+        new file:   .project
+        new file:   .settings/language.settings.xml
+        new file:   .settings/org.eclipse.cdt.core.prefs
+        new file:   Beeper.cpp
+        new file:   Beeper.h
+        new file:   Hello_Kursovaya.cpp
+        new file:   Hello_Kursovaya.h
+        new file:   KeyPad.cpp
+        new file:   KeyPad.h
+        new file:   LiquidCrystal_I2C.cpp
+        new file:   LiquidCrystal_I2C.h
+        new file:   MorseCoder.cpp
+        new file:   MorseCoder.h
+        new file:   Release/Beeper.cpp.d
+        new file:   Release/Beeper.cpp.o
+        new file:   Release/Hello_Kursovaya.cpp.d
+        new file:   Release/Hello_Kursovaya.cpp.o
+        new file:   Release/Hello_Kursovaya.eep
+        new file:   Release/Hello_Kursovaya.elf
+        new file:   Release/Hello_Kursovaya.hex
+        new file:   Release/Keyboard.cpp.o
+        new file:   Release/LiquidCrystal_I2C.cpp.d
+        new file:   Release/LiquidCrystal_I2C.cpp.o
+        new file:   Release/MorseCoder.cpp.d
+        new file:   Release/MorseCoder.cpp.o
+        new file:   Release/arduino.ar
+        new file:   Release/core/CDC.cpp.d
+        new file:   Release/core/CDC.cpp.o
+        new file:   Release/core/HardwareSerial.cpp.d
+        new file:   Release/core/HardwareSerial.cpp.o
+        new file:   Release/core/HardwareSerial0.cpp.d
+        new file:   Release/core/HardwareSerial0.cpp.o
+        new file:   Release/core/HardwareSerial1.cpp.d
+        new file:   Release/core/HardwareSerial1.cpp.o
+        new file:   Release/core/HardwareSerial2.cpp.d
+        new file:   Release/core/HardwareSerial2.cpp.o
+        new file:   Release/core/HardwareSerial3.cpp.d
+        new file:   Release/core/HardwareSerial3.cpp.o
+        new file:   Release/core/IPAddress.cpp.d
+        new file:   Release/core/IPAddress.cpp.o
+        new file:   Release/core/PluggableUSB.cpp.d
+        new file:   Release/core/PluggableUSB.cpp.o
+        new file:   Release/core/Print.cpp.d
+        new file:   Release/core/Print.cpp.o
+        new file:   Release/core/Stream.cpp.d
+        new file:   Release/core/Stream.cpp.o
+        new file:   Release/core/Tone.cpp.d
+        new file:   Release/core/Tone.cpp.o
+        new file:   Release/core/USBCore.cpp.d
+        new file:   Release/core/USBCore.cpp.o
+        new file:   Release/core/WInterrupts.c.d
+        new file:   Release/core/WInterrupts.c.o
+        new file:   Release/core/WMath.cpp.d
+        new file:   Release/core/WMath.cpp.o
+        new file:   Release/core/WString.cpp.d
+        new file:   Release/core/WString.cpp.o
+        new file:   Release/core/abi.cpp.d
+        new file:   Release/core/abi.cpp.o
+        new file:   Release/core/core/subdir.mk
+        new file:   Release/core/hooks.c.d
+        new file:   Release/core/hooks.c.o
+        new file:   Release/core/main.cpp.d
+        new file:   Release/core/main.cpp.o
+        new file:   Release/core/new.cpp.d
+        new file:   Release/core/new.cpp.o
+        new file:   Release/core/wiring.c.d
+        new file:   Release/core/wiring.c.o
+        new file:   Release/core/wiring_analog.c.d
+        new file:   Release/core/wiring_analog.c.o
+        new file:   Release/core/wiring_digital.c.d
+        new file:   Release/core/wiring_digital.c.o
+        new file:   Release/core/wiring_pulse.S.d
+        new file:   Release/core/wiring_pulse.S.o
+        new file:   Release/core/wiring_pulse.c.d
+        new file:   Release/core/wiring_pulse.c.o
+        new file:   Release/core/wiring_shift.c.d
+        new file:   Release/core/wiring_shift.c.o
+        new file:   Release/lcdi2c/LiquidCrystal_I2C.cpp.o
+        new file:   Release/lcdi2c/subdir.mk
+        new file:   Release/libraries/HID/src/HID.cpp.d
+        new file:   Release/libraries/HID/src/HID.cpp.o
+        new file:   Release/libraries/HID/src/subdir.mk
+        new file:   Release/libraries/Keyboard/src/Keyboard.cpp.d
+        new file:   Release/libraries/Keyboard/src/Keyboard.cpp.o
+        new file:   Release/libraries/Keyboard/src/subdir.mk
+        new file:   Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.d
+        new file:   Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.o
+        new file:   Release/libraries/SoftwareSerial/src/subdir.mk
+        new file:   Release/libraries/Wire/src/Wire.cpp.d
+        new file:   Release/libraries/Wire/src/Wire.cpp.o
+        new file:   Release/libraries/Wire/src/subdir.mk
+        new file:   Release/libraries/Wire/src/utility/subdir.mk
+        new file:   Release/libraries/Wire/src/utility/twi.c.d
+        new file:   Release/libraries/Wire/src/utility/twi.c.o
+        new file:   Release/makefile
+        new file:   Release/objects.mk
+        new file:   Release/sources.mk
+        new file:   Release/subdir.mk
+
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git rm .
+fatal: not removing '.' recursively without -r
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git rm -r .
+error: the following files have changes staged in the index:
+    .cproject
+    .gitignore
+    .project
+    .settings/language.settings.xml
+    .settings/org.eclipse.cdt.core.prefs
+    Beeper.cpp
+    Beeper.h
+    Hello_Kursovaya.cpp
+    Hello_Kursovaya.h
+    KeyPad.cpp
+    KeyPad.h
+    LiquidCrystal_I2C.cpp
+    LiquidCrystal_I2C.h
+    MorseCoder.cpp
+    MorseCoder.h
+    Release/Beeper.cpp.d
+    Release/Beeper.cpp.o
+    Release/Hello_Kursovaya.cpp.d
+    Release/Hello_Kursovaya.cpp.o
+    Release/Hello_Kursovaya.eep
+    Release/Hello_Kursovaya.elf
+    Release/Hello_Kursovaya.hex
+    Release/Keyboard.cpp.o
+    Release/LiquidCrystal_I2C.cpp.d
+    Release/LiquidCrystal_I2C.cpp.o
+    Release/MorseCoder.cpp.d
+    Release/MorseCoder.cpp.o
+    Release/arduino.ar
+    Release/core/CDC.cpp.d
+    Release/core/CDC.cpp.o
+    Release/core/HardwareSerial.cpp.d
+    Release/core/HardwareSerial.cpp.o
+    Release/core/HardwareSerial0.cpp.d
+    Release/core/HardwareSerial0.cpp.o
+    Release/core/HardwareSerial1.cpp.d
+    Release/core/HardwareSerial1.cpp.o
+    Release/core/HardwareSerial2.cpp.d
+    Release/core/HardwareSerial2.cpp.o
+    Release/core/HardwareSerial3.cpp.d
+    Release/core/HardwareSerial3.cpp.o
+    Release/core/IPAddress.cpp.d
+    Release/core/IPAddress.cpp.o
+    Release/core/PluggableUSB.cpp.d
+    Release/core/PluggableUSB.cpp.o
+    Release/core/Print.cpp.d
+    Release/core/Print.cpp.o
+    Release/core/Stream.cpp.d
+    Release/core/Stream.cpp.o
+    Release/core/Tone.cpp.d
+    Release/core/Tone.cpp.o
+    Release/core/USBCore.cpp.d
+    Release/core/USBCore.cpp.o
+    Release/core/WInterrupts.c.d
+    Release/core/WInterrupts.c.o
+    Release/core/WMath.cpp.d
+    Release/core/WMath.cpp.o
+    Release/core/WString.cpp.d
+    Release/core/WString.cpp.o
+    Release/core/abi.cpp.d
+    Release/core/abi.cpp.o
+    Release/core/core/subdir.mk
+    Release/core/hooks.c.d
+    Release/core/hooks.c.o
+    Release/core/main.cpp.d
+    Release/core/main.cpp.o
+    Release/core/new.cpp.d
+    Release/core/new.cpp.o
+    Release/core/wiring.c.d
+    Release/core/wiring.c.o
+    Release/core/wiring_analog.c.d
+    Release/core/wiring_analog.c.o
+    Release/core/wiring_digital.c.d
+    Release/core/wiring_digital.c.o
+    Release/core/wiring_pulse.S.d
+    Release/core/wiring_pulse.S.o
+    Release/core/wiring_pulse.c.d
+    Release/core/wiring_pulse.c.o
+    Release/core/wiring_shift.c.d
+    Release/core/wiring_shift.c.o
+    Release/lcdi2c/LiquidCrystal_I2C.cpp.o
+    Release/lcdi2c/subdir.mk
+    Release/libraries/HID/src/HID.cpp.d
+    Release/libraries/HID/src/HID.cpp.o
+    Release/libraries/HID/src/subdir.mk
+    Release/libraries/Keyboard/src/Keyboard.cpp.d
+    Release/libraries/Keyboard/src/Keyboard.cpp.o
+    Release/libraries/Keyboard/src/subdir.mk
+    Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.d
+    Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.o
+    Release/libraries/SoftwareSerial/src/subdir.mk
+    Release/libraries/Wire/src/Wire.cpp.d
+    Release/libraries/Wire/src/Wire.cpp.o
+    Release/libraries/Wire/src/subdir.mk
+    Release/libraries/Wire/src/utility/subdir.mk
+    Release/libraries/Wire/src/utility/twi.c.d
+    Release/libraries/Wire/src/utility/twi.c.o
+    Release/makefile
+    Release/objects.mk
+    Release/sources.mk
+    Release/subdir.mk
+(use --cached to keep the file, or -f to force removal)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .cproject
+        new file:   .gitignore
+        new file:   .project
+        new file:   .settings/language.settings.xml
+        new file:   .settings/org.eclipse.cdt.core.prefs
+        new file:   Beeper.cpp
+        new file:   Beeper.h
+        new file:   Hello_Kursovaya.cpp
+        new file:   Hello_Kursovaya.h
+        new file:   KeyPad.cpp
+        new file:   KeyPad.h
+        new file:   LiquidCrystal_I2C.cpp
+        new file:   LiquidCrystal_I2C.h
+        new file:   MorseCoder.cpp
+        new file:   MorseCoder.h
+        new file:   Release/Beeper.cpp.d
+        new file:   Release/Beeper.cpp.o
+        new file:   Release/Hello_Kursovaya.cpp.d
+        new file:   Release/Hello_Kursovaya.cpp.o
+        new file:   Release/Hello_Kursovaya.eep
+        new file:   Release/Hello_Kursovaya.elf
+        new file:   Release/Hello_Kursovaya.hex
+        new file:   Release/Keyboard.cpp.o
+        new file:   Release/LiquidCrystal_I2C.cpp.d
+        new file:   Release/LiquidCrystal_I2C.cpp.o
+        new file:   Release/MorseCoder.cpp.d
+        new file:   Release/MorseCoder.cpp.o
+        new file:   Release/arduino.ar
+        new file:   Release/core/CDC.cpp.d
+        new file:   Release/core/CDC.cpp.o
+        new file:   Release/core/HardwareSerial.cpp.d
+        new file:   Release/core/HardwareSerial.cpp.o
+        new file:   Release/core/HardwareSerial0.cpp.d
+        new file:   Release/core/HardwareSerial0.cpp.o
+        new file:   Release/core/HardwareSerial1.cpp.d
+        new file:   Release/core/HardwareSerial1.cpp.o
+        new file:   Release/core/HardwareSerial2.cpp.d
+        new file:   Release/core/HardwareSerial2.cpp.o
+        new file:   Release/core/HardwareSerial3.cpp.d
+        new file:   Release/core/HardwareSerial3.cpp.o
+        new file:   Release/core/IPAddress.cpp.d
+        new file:   Release/core/IPAddress.cpp.o
+        new file:   Release/core/PluggableUSB.cpp.d
+        new file:   Release/core/PluggableUSB.cpp.o
+        new file:   Release/core/Print.cpp.d
+        new file:   Release/core/Print.cpp.o
+        new file:   Release/core/Stream.cpp.d
+        new file:   Release/core/Stream.cpp.o
+        new file:   Release/core/Tone.cpp.d
+        new file:   Release/core/Tone.cpp.o
+        new file:   Release/core/USBCore.cpp.d
+        new file:   Release/core/USBCore.cpp.o
+        new file:   Release/core/WInterrupts.c.d
+        new file:   Release/core/WInterrupts.c.o
+        new file:   Release/core/WMath.cpp.d
+        new file:   Release/core/WMath.cpp.o
+        new file:   Release/core/WString.cpp.d
+        new file:   Release/core/WString.cpp.o
+        new file:   Release/core/abi.cpp.d
+        new file:   Release/core/abi.cpp.o
+        new file:   Release/core/core/subdir.mk
+        new file:   Release/core/hooks.c.d
+        new file:   Release/core/hooks.c.o
+        new file:   Release/core/main.cpp.d
+        new file:   Release/core/main.cpp.o
+        new file:   Release/core/new.cpp.d
+        new file:   Release/core/new.cpp.o
+        new file:   Release/core/wiring.c.d
+        new file:   Release/core/wiring.c.o
+        new file:   Release/core/wiring_analog.c.d
+        new file:   Release/core/wiring_analog.c.o
+        new file:   Release/core/wiring_digital.c.d
+        new file:   Release/core/wiring_digital.c.o
+        new file:   Release/core/wiring_pulse.S.d
+        new file:   Release/core/wiring_pulse.S.o
+        new file:   Release/core/wiring_pulse.c.d
+        new file:   Release/core/wiring_pulse.c.o
+        new file:   Release/core/wiring_shift.c.d
+        new file:   Release/core/wiring_shift.c.o
+        new file:   Release/lcdi2c/LiquidCrystal_I2C.cpp.o
+        new file:   Release/lcdi2c/subdir.mk
+        new file:   Release/libraries/HID/src/HID.cpp.d
+        new file:   Release/libraries/HID/src/HID.cpp.o
+        new file:   Release/libraries/HID/src/subdir.mk
+        new file:   Release/libraries/Keyboard/src/Keyboard.cpp.d
+        new file:   Release/libraries/Keyboard/src/Keyboard.cpp.o
+        new file:   Release/libraries/Keyboard/src/subdir.mk
+        new file:   Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.d
+        new file:   Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.o
+        new file:   Release/libraries/SoftwareSerial/src/subdir.mk
+        new file:   Release/libraries/Wire/src/Wire.cpp.d
+        new file:   Release/libraries/Wire/src/Wire.cpp.o
+        new file:   Release/libraries/Wire/src/subdir.mk
+        new file:   Release/libraries/Wire/src/utility/subdir.mk
+        new file:   Release/libraries/Wire/src/utility/twi.c.d
+        new file:   Release/libraries/Wire/src/utility/twi.c.o
+        new file:   Release/makefile
+        new file:   Release/objects.mk
+        new file:   Release/sources.mk
+        new file:   Release/subdir.mk
+
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .cproject
+        new file:   .gitignore
+        new file:   .project
+        new file:   .settings/language.settings.xml
+        new file:   .settings/org.eclipse.cdt.core.prefs
+        new file:   Beeper.cpp
+        new file:   Beeper.h
+        new file:   Hello_Kursovaya.cpp
+        new file:   Hello_Kursovaya.h
+        new file:   KeyPad.cpp
+        new file:   KeyPad.h
+        new file:   LiquidCrystal_I2C.cpp
+        new file:   LiquidCrystal_I2C.h
+        new file:   MorseCoder.cpp
+        new file:   MorseCoder.h
+        new file:   Release/Beeper.cpp.d
+        new file:   Release/Beeper.cpp.o
+        new file:   Release/Hello_Kursovaya.cpp.d
+        new file:   Release/Hello_Kursovaya.cpp.o
+        new file:   Release/Hello_Kursovaya.eep
+        new file:   Release/Hello_Kursovaya.elf
+        new file:   Release/Hello_Kursovaya.hex
+        new file:   Release/Keyboard.cpp.o
+        new file:   Release/LiquidCrystal_I2C.cpp.d
+        new file:   Release/LiquidCrystal_I2C.cpp.o
+        new file:   Release/MorseCoder.cpp.d
+        new file:   Release/MorseCoder.cpp.o
+        new file:   Release/arduino.ar
+        new file:   Release/core/CDC.cpp.d
+        new file:   Release/core/CDC.cpp.o
+        new file:   Release/core/HardwareSerial.cpp.d
+        new file:   Release/core/HardwareSerial.cpp.o
+        new file:   Release/core/HardwareSerial0.cpp.d
+        new file:   Release/core/HardwareSerial0.cpp.o
+        new file:   Release/core/HardwareSerial1.cpp.d
+        new file:   Release/core/HardwareSerial1.cpp.o
+        new file:   Release/core/HardwareSerial2.cpp.d
+        new file:   Release/core/HardwareSerial2.cpp.o
+        new file:   Release/core/HardwareSerial3.cpp.d
+        new file:   Release/core/HardwareSerial3.cpp.o
+        new file:   Release/core/IPAddress.cpp.d
+        new file:   Release/core/IPAddress.cpp.o
+        new file:   Release/core/PluggableUSB.cpp.d
+        new file:   Release/core/PluggableUSB.cpp.o
+        new file:   Release/core/Print.cpp.d
+        new file:   Release/core/Print.cpp.o
+        new file:   Release/core/Stream.cpp.d
+        new file:   Release/core/Stream.cpp.o
+        new file:   Release/core/Tone.cpp.d
+        new file:   Release/core/Tone.cpp.o
+        new file:   Release/core/USBCore.cpp.d
+        new file:   Release/core/USBCore.cpp.o
+        new file:   Release/core/WInterrupts.c.d
+        new file:   Release/core/WInterrupts.c.o
+        new file:   Release/core/WMath.cpp.d
+        new file:   Release/core/WMath.cpp.o
+        new file:   Release/core/WString.cpp.d
+        new file:   Release/core/WString.cpp.o
+        new file:   Release/core/abi.cpp.d
+        new file:   Release/core/abi.cpp.o
+        new file:   Release/core/core/subdir.mk
+        new file:   Release/core/hooks.c.d
+        new file:   Release/core/hooks.c.o
+        new file:   Release/core/main.cpp.d
+        new file:   Release/core/main.cpp.o
+        new file:   Release/core/new.cpp.d
+        new file:   Release/core/new.cpp.o
+        new file:   Release/core/wiring.c.d
+        new file:   Release/core/wiring.c.o
+        new file:   Release/core/wiring_analog.c.d
+        new file:   Release/core/wiring_analog.c.o
+        new file:   Release/core/wiring_digital.c.d
+        new file:   Release/core/wiring_digital.c.o
+        new file:   Release/core/wiring_pulse.S.d
+        new file:   Release/core/wiring_pulse.S.o
+        new file:   Release/core/wiring_pulse.c.d
+        new file:   Release/core/wiring_pulse.c.o
+        new file:   Release/core/wiring_shift.c.d
+        new file:   Release/core/wiring_shift.c.o
+        new file:   Release/lcdi2c/LiquidCrystal_I2C.cpp.o
+        new file:   Release/lcdi2c/subdir.mk
+        new file:   Release/libraries/HID/src/HID.cpp.d
+        new file:   Release/libraries/HID/src/HID.cpp.o
+        new file:   Release/libraries/HID/src/subdir.mk
+        new file:   Release/libraries/Keyboard/src/Keyboard.cpp.d
+        new file:   Release/libraries/Keyboard/src/Keyboard.cpp.o
+        new file:   Release/libraries/Keyboard/src/subdir.mk
+        new file:   Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.d
+        new file:   Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.o
+        new file:   Release/libraries/SoftwareSerial/src/subdir.mk
+        new file:   Release/libraries/Wire/src/Wire.cpp.d
+        new file:   Release/libraries/Wire/src/Wire.cpp.o
+        new file:   Release/libraries/Wire/src/subdir.mk
+        new file:   Release/libraries/Wire/src/utility/subdir.mk
+        new file:   Release/libraries/Wire/src/utility/twi.c.d
+        new file:   Release/libraries/Wire/src/utility/twi.c.o
+        new file:   Release/makefile
+        new file:   Release/objects.mk
+        new file:   Release/sources.mk
+        new file:   Release/subdir.mk
+
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git rm -r .
+error: the following files have changes staged in the index:
+    .cproject
+    .gitignore
+    .project
+    .settings/language.settings.xml
+    .settings/org.eclipse.cdt.core.prefs
+    Beeper.cpp
+    Beeper.h
+    Hello_Kursovaya.cpp
+    Hello_Kursovaya.h
+    KeyPad.cpp
+    KeyPad.h
+    LiquidCrystal_I2C.cpp
+    LiquidCrystal_I2C.h
+    MorseCoder.cpp
+    MorseCoder.h
+    Release/Beeper.cpp.d
+    Release/Beeper.cpp.o
+    Release/Hello_Kursovaya.cpp.d
+    Release/Hello_Kursovaya.cpp.o
+    Release/Hello_Kursovaya.eep
+    Release/Hello_Kursovaya.elf
+    Release/Hello_Kursovaya.hex
+    Release/Keyboard.cpp.o
+    Release/LiquidCrystal_I2C.cpp.d
+    Release/LiquidCrystal_I2C.cpp.o
+    Release/MorseCoder.cpp.d
+    Release/MorseCoder.cpp.o
+    Release/arduino.ar
+    Release/core/CDC.cpp.d
+    Release/core/CDC.cpp.o
+    Release/core/HardwareSerial.cpp.d
+    Release/core/HardwareSerial.cpp.o
+    Release/core/HardwareSerial0.cpp.d
+    Release/core/HardwareSerial0.cpp.o
+    Release/core/HardwareSerial1.cpp.d
+    Release/core/HardwareSerial1.cpp.o
+    Release/core/HardwareSerial2.cpp.d
+    Release/core/HardwareSerial2.cpp.o
+    Release/core/HardwareSerial3.cpp.d
+    Release/core/HardwareSerial3.cpp.o
+    Release/core/IPAddress.cpp.d
+    Release/core/IPAddress.cpp.o
+    Release/core/PluggableUSB.cpp.d
+    Release/core/PluggableUSB.cpp.o
+    Release/core/Print.cpp.d
+    Release/core/Print.cpp.o
+    Release/core/Stream.cpp.d
+    Release/core/Stream.cpp.o
+    Release/core/Tone.cpp.d
+    Release/core/Tone.cpp.o
+    Release/core/USBCore.cpp.d
+    Release/core/USBCore.cpp.o
+    Release/core/WInterrupts.c.d
+    Release/core/WInterrupts.c.o
+    Release/core/WMath.cpp.d
+    Release/core/WMath.cpp.o
+    Release/core/WString.cpp.d
+    Release/core/WString.cpp.o
+    Release/core/abi.cpp.d
+    Release/core/abi.cpp.o
+    Release/core/core/subdir.mk
+    Release/core/hooks.c.d
+    Release/core/hooks.c.o
+    Release/core/main.cpp.d
+    Release/core/main.cpp.o
+    Release/core/new.cpp.d
+    Release/core/new.cpp.o
+    Release/core/wiring.c.d
+    Release/core/wiring.c.o
+    Release/core/wiring_analog.c.d
+    Release/core/wiring_analog.c.o
+    Release/core/wiring_digital.c.d
+    Release/core/wiring_digital.c.o
+    Release/core/wiring_pulse.S.d
+    Release/core/wiring_pulse.S.o
+    Release/core/wiring_pulse.c.d
+    Release/core/wiring_pulse.c.o
+    Release/core/wiring_shift.c.d
+    Release/core/wiring_shift.c.o
+    Release/lcdi2c/LiquidCrystal_I2C.cpp.o
+    Release/lcdi2c/subdir.mk
+    Release/libraries/HID/src/HID.cpp.d
+    Release/libraries/HID/src/HID.cpp.o
+    Release/libraries/HID/src/subdir.mk
+    Release/libraries/Keyboard/src/Keyboard.cpp.d
+    Release/libraries/Keyboard/src/Keyboard.cpp.o
+    Release/libraries/Keyboard/src/subdir.mk
+    Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.d
+    Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.o
+    Release/libraries/SoftwareSerial/src/subdir.mk
+    Release/libraries/Wire/src/Wire.cpp.d
+    Release/libraries/Wire/src/Wire.cpp.o
+    Release/libraries/Wire/src/subdir.mk
+    Release/libraries/Wire/src/utility/subdir.mk
+    Release/libraries/Wire/src/utility/twi.c.d
+    Release/libraries/Wire/src/utility/twi.c.o
+    Release/makefile
+    Release/objects.mk
+    Release/sources.mk
+    Release/subdir.mk
+(use --cached to keep the file, or -f to force removal)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git rm -r --cached .
+rm '.cproject'
+rm '.gitignore'
+rm '.project'
+rm '.settings/language.settings.xml'
+rm '.settings/org.eclipse.cdt.core.prefs'
+rm 'Beeper.cpp'
+rm 'Beeper.h'
+rm 'Hello_Kursovaya.cpp'
+rm 'Hello_Kursovaya.h'
+rm 'KeyPad.cpp'
+rm 'KeyPad.h'
+rm 'LiquidCrystal_I2C.cpp'
+rm 'LiquidCrystal_I2C.h'
+rm 'MorseCoder.cpp'
+rm 'MorseCoder.h'
+rm 'Release/Beeper.cpp.d'
+rm 'Release/Beeper.cpp.o'
+rm 'Release/Hello_Kursovaya.cpp.d'
+rm 'Release/Hello_Kursovaya.cpp.o'
+rm 'Release/Hello_Kursovaya.eep'
+rm 'Release/Hello_Kursovaya.elf'
+rm 'Release/Hello_Kursovaya.hex'
+rm 'Release/Keyboard.cpp.o'
+rm 'Release/LiquidCrystal_I2C.cpp.d'
+rm 'Release/LiquidCrystal_I2C.cpp.o'
+rm 'Release/MorseCoder.cpp.d'
+rm 'Release/MorseCoder.cpp.o'
+rm 'Release/arduino.ar'
+rm 'Release/core/CDC.cpp.d'
+rm 'Release/core/CDC.cpp.o'
+rm 'Release/core/HardwareSerial.cpp.d'
+rm 'Release/core/HardwareSerial.cpp.o'
+rm 'Release/core/HardwareSerial0.cpp.d'
+rm 'Release/core/HardwareSerial0.cpp.o'
+rm 'Release/core/HardwareSerial1.cpp.d'
+rm 'Release/core/HardwareSerial1.cpp.o'
+rm 'Release/core/HardwareSerial2.cpp.d'
+rm 'Release/core/HardwareSerial2.cpp.o'
+rm 'Release/core/HardwareSerial3.cpp.d'
+rm 'Release/core/HardwareSerial3.cpp.o'
+rm 'Release/core/IPAddress.cpp.d'
+rm 'Release/core/IPAddress.cpp.o'
+rm 'Release/core/PluggableUSB.cpp.d'
+rm 'Release/core/PluggableUSB.cpp.o'
+rm 'Release/core/Print.cpp.d'
+rm 'Release/core/Print.cpp.o'
+rm 'Release/core/Stream.cpp.d'
+rm 'Release/core/Stream.cpp.o'
+rm 'Release/core/Tone.cpp.d'
+rm 'Release/core/Tone.cpp.o'
+rm 'Release/core/USBCore.cpp.d'
+rm 'Release/core/USBCore.cpp.o'
+rm 'Release/core/WInterrupts.c.d'
+rm 'Release/core/WInterrupts.c.o'
+rm 'Release/core/WMath.cpp.d'
+rm 'Release/core/WMath.cpp.o'
+rm 'Release/core/WString.cpp.d'
+rm 'Release/core/WString.cpp.o'
+rm 'Release/core/abi.cpp.d'
+rm 'Release/core/abi.cpp.o'
+rm 'Release/core/core/subdir.mk'
+rm 'Release/core/hooks.c.d'
+rm 'Release/core/hooks.c.o'
+rm 'Release/core/main.cpp.d'
+rm 'Release/core/main.cpp.o'
+rm 'Release/core/new.cpp.d'
+rm 'Release/core/new.cpp.o'
+rm 'Release/core/wiring.c.d'
+rm 'Release/core/wiring.c.o'
+rm 'Release/core/wiring_analog.c.d'
+rm 'Release/core/wiring_analog.c.o'
+rm 'Release/core/wiring_digital.c.d'
+rm 'Release/core/wiring_digital.c.o'
+rm 'Release/core/wiring_pulse.S.d'
+rm 'Release/core/wiring_pulse.S.o'
+rm 'Release/core/wiring_pulse.c.d'
+rm 'Release/core/wiring_pulse.c.o'
+rm 'Release/core/wiring_shift.c.d'
+rm 'Release/core/wiring_shift.c.o'
+rm 'Release/lcdi2c/LiquidCrystal_I2C.cpp.o'
+rm 'Release/lcdi2c/subdir.mk'
+rm 'Release/libraries/HID/src/HID.cpp.d'
+rm 'Release/libraries/HID/src/HID.cpp.o'
+rm 'Release/libraries/HID/src/subdir.mk'
+rm 'Release/libraries/Keyboard/src/Keyboard.cpp.d'
+rm 'Release/libraries/Keyboard/src/Keyboard.cpp.o'
+rm 'Release/libraries/Keyboard/src/subdir.mk'
+rm 'Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.d'
+rm 'Release/libraries/SoftwareSerial/src/SoftwareSerial.cpp.o'
+rm 'Release/libraries/SoftwareSerial/src/subdir.mk'
+rm 'Release/libraries/Wire/src/Wire.cpp.d'
+rm 'Release/libraries/Wire/src/Wire.cpp.o'
+rm 'Release/libraries/Wire/src/subdir.mk'
+rm 'Release/libraries/Wire/src/utility/subdir.mk'
+rm 'Release/libraries/Wire/src/utility/twi.c.d'
+rm 'Release/libraries/Wire/src/utility/twi.c.o'
+rm 'Release/makefile'
+rm 'Release/objects.mk'
+rm 'Release/sources.mk'
+rm 'Release/subdir.mk'
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .cproject
+        .gitignore
+        .project
+        .settings/
+        Beeper.cpp
+        Beeper.h
+        Hello_Kursovaya.cpp
+        Hello_Kursovaya.h
+        KeyPad.cpp
+        KeyPad.h
+        LiquidCrystal_I2C.cpp
+        LiquidCrystal_I2C.h
+        MorseCoder.cpp
+        MorseCoder.h
+        Release/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .cproject
+        .gitignore
+        .project
+        .settings/
+        Beeper.cpp
+        Beeper.h
+        Hello_Kursovaya.cpp
+        Hello_Kursovaya.h
+        KeyPad.cpp
+        KeyPad.h
+        LiquidCrystal_I2C.cpp
+        LiquidCrystal_I2C.h
+        MorseCoder.cpp
+        MorseCoder.h
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git add .
+warning: LF will be replaced by CRLF in LiquidCrystal_I2C.cpp.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in LiquidCrystal_I2C.h.
+The file will have its original line endings in your working directory.
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   .cproject
+        new file:   .gitignore
+        new file:   .project
+        new file:   .settings/language.settings.xml
+        new file:   .settings/org.eclipse.cdt.core.prefs
+        new file:   Beeper.cpp
+        new file:   Beeper.h
+        new file:   Hello_Kursovaya.cpp
+        new file:   Hello_Kursovaya.h
+        new file:   KeyPad.cpp
+        new file:   KeyPad.h
+        new file:   LiquidCrystal_I2C.cpp
+        new file:   LiquidCrystal_I2C.h
+        new file:   MorseCoder.cpp
+        new file:   MorseCoder.h
+
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git commit -m "initial commit"
+[master (root-commit) 1baa81f] initial commit
+ 15 files changed, 1619 insertions(+)
+ create mode 100644 .cproject
+ create mode 100644 .gitignore
+ create mode 100644 .project
+ create mode 100644 .settings/language.settings.xml
+ create mode 100644 .settings/org.eclipse.cdt.core.prefs
+ create mode 100644 Beeper.cpp
+ create mode 100644 Beeper.h
+ create mode 100644 Hello_Kursovaya.cpp
+ create mode 100644 Hello_Kursovaya.h
+ create mode 100644 KeyPad.cpp
+ create mode 100644 KeyPad.h
+ create mode 100644 LiquidCrystal_I2C.cpp
+ create mode 100644 LiquidCrystal_I2C.h
+ create mode 100644 MorseCoder.cpp
+ create mode 100644 MorseCoder.h
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git log
+commit 1baa81f4d25c175d794a4ea5ceb104963a3f4584
+Author: Sasha <sashazabashta25@yandex.ru>
+Date:   Sun Oct 9 14:49:44 2016 +0300
+
+    initial commit
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git diff
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git diff
+diff --git a/KeyPad.cpp b/KeyPad.cpp
+index 7f5b26e..ec5f5bd 100644
+--- a/KeyPad.cpp
++++ b/KeyPad.cpp
+@@ -19,6 +19,7 @@ KeyPad::KeyPad(uint8_t x1, uint8_t x2, uint8_t x3, uint8_t x4,
+        y2_ = y2;
+        y3_ = y3;
+        y4_ = y4;
++       y4_ = y4;
+ }
+
+ KeyPad::~KeyPad() {
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   KeyPad.cpp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git add KeyPad.cpp
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   KeyPad.cpp
+
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git commit -m "test commit"
+[master 7c6e2d6] test commit
+ 1 file changed, 1 insertion(+)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git log
+commit 7c6e2d64a02af48af08d42c58879fd4be7f1531b
+Author: Sasha <sashazabashta25@yandex.ru>
+Date:   Sun Oct 9 14:51:02 2016 +0300
+
+    test commit
+
+commit 1baa81f4d25c175d794a4ea5ceb104963a3f4584
+Author: Sasha <sashazabashta25@yandex.ru>
+Date:   Sun Oct 9 14:49:44 2016 +0300
+
+    initial commit
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git diff
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git diff 1baa 7c6e
+diff --git a/KeyPad.cpp b/KeyPad.cpp
+index 7f5b26e..ec5f5bd 100644
+--- a/KeyPad.cpp
++++ b/KeyPad.cpp
+@@ -19,6 +19,7 @@ KeyPad::KeyPad(uint8_t x1, uint8_t x2, uint8_t x3, uint8_t x4,
+        y2_ = y2;
+        y3_ = y3;
+        y4_ = y4;
++       y4_ = y4;
+ }
+
+ KeyPad::~KeyPad() {
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git add remote origin https://github.com/AlexandrZz/MorseDevice.git
+fatal: pathspec 'remote' did not match any files
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git remote add origin https://github.com/AlexandrZz/MorseDevice.git
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git remote -v
+origin  https://github.com/AlexandrZz/MorseDevice.git (fetch)
+origin  https://github.com/AlexandrZz/MorseDevice.git (push)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git push origin master
+To https://github.com/AlexandrZz/MorseDevice.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/AlexandrZz/MorseDevice.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git push origin master
+To https://github.com/AlexandrZz/MorseDevice.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/AlexandrZz/MorseDevice.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git pull
+warning: no common commits
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/AlexandrZz/MorseDevice
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git pull origin master
+From https://github.com/AlexandrZz/MorseDevice
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git merge origin master
+merge: origin - not something we can merge
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git push origin master
+To https://github.com/AlexandrZz/MorseDevice.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/AlexandrZz/MorseDevice.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ ^C
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$ git push -f origin master
+Counting objects: 21, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (21/21), 13.89 KiB | 0 bytes/s, done.
+Total 21 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/AlexandrZz/MorseDevice.git
+ + 165bf62...7c6e2d6 master -> master (forced update)
+
+алекс@Alex MINGW64 ~/Desktop/sloeber/workspace/Hello_Kursovaya (master)
+$

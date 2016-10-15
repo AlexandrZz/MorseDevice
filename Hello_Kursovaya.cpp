@@ -2,382 +2,242 @@
 #include "Hello_Kursovaya.h"
 #include "SoftwareSerial.h"
 #include "Beeper.h"
-//#include "Keypad.h" // Подключаем библиотеку
 #include "LiquidCrystal_I2C.h"
 #include "MorseCoder.h"
+#include "time.h"
+#include "stdio.h"
+#include "stdlib.h"
 
-Beeper beeper(9, 10);
+Beeper beeper(9, 13);
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 MorseCoder morseCoder;
 
+int PinOut[4] {1, 2, 3, 4}; // пины выходы
+int PinIn[4] {5, 6, 7, 8}; // пины входа
+int val = 0;
+const char value[4][4]       // двойной массив, обозначающий клавиатуру
+{ {'A', 'E', 'I', 'M'},
+  {'B', 'F', 'J', 'N' },
+  {'C', 'G', 'K', 'O'},
+  {'D', 'H', 'L', '0'}
+};
+int b = 0; // переменная, в которую записывается номер кнопки
 
 //The setup function is called once at startup of the sketch
 void setup() {
+	pinMode (1, OUTPUT); // инициализируем порты на выход (подают нули на столбцы)
+	digitalWrite(1, HIGH);
+	pinMode (2, OUTPUT);
+	digitalWrite(2, HIGH);
+	pinMode (3, OUTPUT);
+	digitalWrite(3, HIGH);
+	pinMode (4, OUTPUT);
+	digitalWrite(4, HIGH);
+
+	pinMode (5, INPUT); // инициализируем порты на вход с подтяжкой к плюсу (принимают нули на строках)
+	digitalWrite(5, HIGH);
+	pinMode (6, INPUT);
+	digitalWrite(6, HIGH);
+	pinMode (7, INPUT);
+	digitalWrite(7, HIGH);
+	pinMode (8, INPUT);
+	digitalWrite(8, HIGH);
+
 	pinMode(13, OUTPUT);
 	pinMode(12, OUTPUT);
 	lcd.begin();                            // Инициализация lcd
-	lcd.setCursor(3, 0);                     // Курсор находится в начале 1 строки
-	lcd.print("TRENAZHER");            // Выводим текст
-	lcd.setCursor(2, 1);               // Устанавливаем курсор в начало 2 строки
-	lcd.print("AZBUKI MORZE");
+	lcd.setCursor(2, 0);                     // Курсор находится в начале 1 строки
+	lcd.print("SIMULATOR OF");            // Выводим текст
+	lcd.setCursor(3, 1);               // Устанавливаем курсор в начало 2 строки
+	lcd.print("MORSE CODE");
+	delay(3000);
 }
 
 // The loop function is called in an endless loop
 
-void point(uint8_t pin)
-{
-	digitalWrite(pin, HIGH);
-	beeper.beep(300);
-	digitalWrite(pin, LOW);
-	delay(500);
-}
-
-void dash(uint8_t pin)
-{
-	digitalWrite(pin, HIGH);
-	beeper.beep(1000);
-	digitalWrite(pin, LOW);
-	delay(500);
-}
-
 void play(uint16_t* codes) {
-	for (uint8_t i = 0; i < 3; i++) {
+	delay(700);
+	for (uint8_t i = 0; i < 4; i++) {
 		beeper.beep(codes[i]);
 		delay(500);
 	}
+	delay(1000);
+}
+
+void lcdmon(char sim)
+{
+	lcd.clear();
+	lcd.setCursor(7, 0);
+	lcd.print(sim);
+}
+
+char matrix () // функция для чтения нажатия кнопки
+{
+  char G;
+	for (int i = 0; i < 4; i++) // цикл, передающий 0 по всем столбцам
+  {
+    digitalWrite(PinOut[i], LOW); // если i меньше 4 , то отправляем 0 на ножку
+    for (int j = 0; j < 4; j++) // цикл, принимающий 0 по строкам
+    {
+      if (digitalRead(PinIn[j]) == LOW) // если один из указанных портов входа равен 0, то:
+      {
+        G = value[i][j]; // то b равно значению из двойного массива
+        lcd.clear();
+        lcd.setCursor(7, 0);
+        lcd.print(G);
+        delay(1750);
+      }
+    }
+    digitalWrite(PinOut[i], HIGH); // подаём обратно высокий уровень
+  }
+  return G;
 }
 
 void loop() {
-	play(morseCoder.getCodeForChar('a'));
+    lcd.clear();
+    lcd.setCursor(4, 0);
+	lcd.print("CIPHERS");                  // Выводим текст
+	lcd.setCursor(1, 1);                   // Устанавливаем курсор в начало 2 строки
+	lcd.print("DEMONSTRATION");
+	delay(3000);
 
+	lcdmon('A');                             //вывод на монитор
+	play(morseCoder.getCodeForChar('A'));    //вывод на динамик и светодиод
 
-    delay(3000);
-    play(morseCoder.getCodeForChar('b'));
+    lcdmon('B');
+    play(morseCoder.getCodeForChar('B'));
 
-    delay(3000);
-    /*lcd.clear();
-    lcd.setCursor(2, 0);
-	lcd.print("DEMONSTRATSIA");            // Выводим текст
-	lcd.setCursor(5, 1);               // Устанавливаем курсор в начало 2 строки
-	lcd.print("SHIFROV");
-	delay(3500);
+    lcdmon('C');
+    play(morseCoder.getCodeForChar('C'));
 
-	lcd.clear();
-	lcd.setCursor(7, 0);
-	lcd.print("A");
+    lcdmon('D');
+    play(morseCoder.getCodeForChar('D'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('E');
+    play(morseCoder.getCodeForChar('E'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("B");
+    lcdmon('F');
+    play(morseCoder.getCodeForChar('F'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-	point(13);
-	point(13);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    /*lcdmon('G');
+    play(morseCoder.getCodeForChar('G'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("C");
+    lcdmon('H');
+    play(morseCoder.getCodeForChar('H'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-	point(13);
-	dash(13);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('I');
+    play(morseCoder.getCodeForChar('I'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("D");
+    lcdmon('J');
+    play(morseCoder.getCodeForChar('J'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-	point(13);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('K');
+    play(morseCoder.getCodeForChar('K'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("E");
+    lcdmon('L');
+    play(morseCoder.getCodeForChar('L'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('M');
+    play(morseCoder.getCodeForChar('M'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("F");
+    lcdmon('N');
+    play(morseCoder.getCodeForChar('N'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-	point(13);
-	dash(13);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('O');
+    play(morseCoder.getCodeForChar('O'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("G");
+    lcdmon('P');
+    play(morseCoder.getCodeForChar('P'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-	dash(13);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('Q');
+    play(morseCoder.getCodeForChar('Q'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("H");
+    lcdmon('R');
+    play(morseCoder.getCodeForChar('R'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-	point(13);
-	point(13);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('S');
+    play(morseCoder.getCodeForChar('S'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("I");
+    lcdmon('T');
+    play(morseCoder.getCodeForChar('T'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('U');
+    play(morseCoder.getCodeForChar('U'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("J");
+    lcdmon('V');
+    play(morseCoder.getCodeForChar('V'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-	dash(13);
-	dash(13);
-	dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('W');
+    play(morseCoder.getCodeForChar('W'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("K");
+    lcdmon('X');
+    play(morseCoder.getCodeForChar('X'));
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-    point(13);
-	dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcdmon('Y');
+    play(morseCoder.getCodeForChar('Y'));
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("L");
+    lcdmon('Z');
+    play(morseCoder.getCodeForChar('Z'));*/
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-	dash(13);
-	point(13);
-	point(13);
-	digitalWrite(13, LOW);
-	delay(500);
+    lcd.clear();
+    lcd.setCursor(4, 0);
+	lcd.print("CHECK OF");            // Выводим текст
+	lcd.setCursor(3, 1);               // Устанавливаем курсор в начало 2 строки
+	lcd.print("KNOWLEDGE");
+	delay(3000);
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("M");
+    randomSeed(analogRead(0));   // если порт 0 неподключен, то генератор псевдослучайных чисел будет инициализироваться функцией randomSeed() со случайного значения при каждом запуске программы из-за "шума" на порту
+    uint8_t w = 0, m = 6;                  //здесь m количество тестовых заданий, w - кол-во правильных ответов
+	uint8_t rms[m];
+    for (uint8_t j = 0; j < m; j++) {
+		uint8_t q = random(m);
+        for (int i = 0; i < j; i++)
+        {
+        	if (q == rms[i]){
+        		q = random(m);
+        		i = -1;
+        	}
+        }
+		rms[j] = q;
+		char s = morseCoder.chars[q];
+lcd.clear();  //!   вывод буквы (для облегчения тестирования разработчиком)
+lcd.setCursor(0, 0);  //!
+lcd.print(s);  //!
+		play(morseCoder.getCodeForChar(s));
+		if (matrix() == s)
+		{
+			w++;
+			lcd.setCursor(6, 1);                     // Курсор находится в начале 1 строки
+			lcd.print("YES!");
+		} else
+		{
+			lcd.setCursor(7, 1);                     // Курсор находится в начале 1 строки
+			lcd.print("NO!");
+		}
+		delay(3000);
+		lcd.clear();
+		delay(200);
+	}
 
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
+		float c = (float)w / (float)m;
+		uint8_t d;
+		if ((0 <= c) & (c <= 0.4))
+			d = 2;
+		if ((0.4 < c) & (c <= 0.6))
+			d = 3;
+		if ((0.6 < c) & (c <= 0.8))
+			d = 4;
+		if ((0.8 < c) & (c <= 1))
+			d = 5;
 
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("N");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-    point(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("O");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-    dash(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("P");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-    dash(13);
-    dash(13);
-    point(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("Q");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-    dash(13);
-    point(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("R");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-    dash(13);
-    point(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("S");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-    point(13);
-    point(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("T");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("U");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-    point(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("V");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-    point(13);
-    point(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("W");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	point(13);
-    dash(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("X");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-    point(13);
-    point(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("Y");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-    point(13);
-    dash(13);
-    dash(13);
-	digitalWrite(13, LOW);
-	delay(500);
-
-	lcd.clear();                //вывод символа
-	lcd.setCursor(7, 0);
-	lcd.print("Z");
-
-	digitalWrite(13, LOW);       //световой сигнал
-	delay(2000);
-	dash(13);
-    dash(13);
-    point(13);
-    point(13);
-	digitalWrite(13, LOW);
-	delay(500);
-	*/
+		lcd.setCursor(2, 0);
+		lcd.print("Result = ");
+		lcd.print(w);
+		lcd.print("/");
+		lcd.print(m);
+		lcd.setCursor(1, 1);
+		lcd.print("Your mark is ");
+		lcd.print(d);
+	    delay(5000);
 }
-

@@ -6,6 +6,8 @@
  */
 
 #include "MorseCoder.h"
+#include "Hello_Kursovaya.h"
+//#include "LiquidCrystal_I2C.cpp"
 
 MorseCoder::MorseCoder() {
 	// TODO Auto-generated constructor stub
@@ -18,7 +20,7 @@ MorseCoder::~MorseCoder() {
 
 
 uint16_t* MorseCoder::getCodeForChar(char ch) {
-	for (uint16_t i=0; i < CHARS_LEN; i++) {
+	for (uint16_t i=0; i <= CHARS_LEN; i++) {
 		if (chars[i] == ch) {
 			return codes[i];
 		}

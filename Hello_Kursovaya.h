@@ -8,6 +8,7 @@
 #define _Hello_Kursovaya_H_
 #include "Arduino.h"
 #include "SoftwareSerial.h"
+//#include "LiquidCrystal_I2C.cpp"
 //add your includes for the project Hello_Kursovaya here
 
 
@@ -15,10 +16,7 @@
 
 
 //add your function definitions for the project Hello_Kursovaya here
-void point(uint8_t);
-void dash(uint8_t);
-
-
+void lcdmon(char);
 
 //Do not add code below this line
 #endif /* _Hello_Kursovaya_H_ */
